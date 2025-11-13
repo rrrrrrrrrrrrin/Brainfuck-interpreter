@@ -5,17 +5,16 @@ void Brainfuck::init()
 {
 	ptr = 0;
 	std::memset(memory, 0, sizeof(memory));
-	
-	byte = 0;
-	input = { 0 };
 
-	brackets = { 0 };
+	opcode_ptr = 0;
+
+	byte = 0;
 }
 
-void Brainfuck::loadFile(int file_size, std::vector<char> buffer)
+void Brainfuck::loadProgr(int file_size, std::vector<char> buffer)
 {
 	for (int i = 0; i < file_size; i++) {
-		memory[i] = buffer[i];
+		progr.push_back(buffer[i]);
 	}
 }
 
@@ -28,13 +27,14 @@ void Brainfuck::loadInput(int file_size, std::vector<char> buffer)
 
 void Brainfuck::program()
 {
-	init();
-
-	while (ptr <= sizeof(memory))
+	while (ptr <= sizeof(memory)-1)
 	{
 		unsigned char &symbol = memory[ptr];
 
-		switch (symbol)
+		// Move in the program by incrementing the opcode_ptr
+		unsigned char opcode = progr[opcode_ptr];
+
+		switch (opcode)
 		{
 		case '>':
 			++ptr;
@@ -45,48 +45,80 @@ void Brainfuck::program()
 			break;
 
 		case '+':
-			++symbol;
+			symbol = ++symbol % 256;
 			break;
 
 		case '-':
-			--symbol;
+			symbol = --symbol % 256;
 			break;
 
 		case '.':
-			std::cout << symbol;
+			std::cout << memory[byte];
 			break;
 
 		case ',':
 			symbol = input[byte++];
 			break;
 
+		// Jump ptr forward to the opcode after the matching ']' command
 		case '[':
-			brackets.push_back('[');
+			brackets.push_back({ '[' , opcode_ptr});
 
+			// Byte in the current memory cell is 0
 			if (symbol == 0)
 			{
+				int brackets_s = sizeof(brackets);
 
+				// The initial '[' popped off
+				while (sizeof(brackets) != brackets_s - 1)
+				{
+					++opcode_ptr;
+
+					switch (opcode)
+					{
+					case '[':
+						brackets.push_back({ '[' , opcode_ptr });
+						break;
+
+					case ']':
+						unsigned char bracket = brackets.back().first;
+						if (bracket == '[')
+						{
+							// Brackets closed
+							brackets.pop_back();
+						}
+						break;
+					}
+				}
 			}
 			break;
 
+		// Jump ptr back to the opcode after the matching '[' command
 		case ']':
-			unsigned char bracket = brackets[sizeof(brackets)];
+		{
+			unsigned char bracket = brackets.back().first;
 
 			if (brackets.empty())
 			{
 				error = true;
-			} 
+			}
+			// Byte in the current memory cell is not 0
+			else if (symbol != 0)
+			{
+				// opcode_ptr is on '['
+				opcode_ptr = brackets.back().second;
+			}
 			else if (bracket == '[')
 			{
 				// Brackets closed
 				brackets.pop_back();
 			}
 
-			if (symbol != 0)
-			{
-
-			}
 			break;
+		}
+
+		default:
+			continue;
 		}
 
 		if (ptr > sizeof(memory))
@@ -94,5 +126,7 @@ void Brainfuck::program()
 			error = true;
 			break;
 		}
+
+		++opcode_ptr;
 	}
 }

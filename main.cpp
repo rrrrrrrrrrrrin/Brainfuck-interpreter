@@ -24,6 +24,8 @@ int main(int argc, char* argv[]) {
 
 	Brainfuck brainfuck;
 
+	brainfuck.init();
+
 	// Load progr into memory
 	progr.seekg(0, std::ios::end);
 	int file_size = static_cast<int>(progr.tellg());
@@ -34,17 +36,19 @@ int main(int argc, char* argv[]) {
 
 	progr.close();
 
-	brainfuck.loadFile(file_size, buffer);
+	brainfuck.loadProgr(file_size, buffer);
 
 	// Load input into buffer
 	input.seekg(0, std::ios::end);
 	file_size = static_cast<int>(input.tellg());
 	input.seekg(0, std::ios::beg);
 
-	std::vector<char> buffer(file_size);
-	input.read(buffer.data(), file_size);
+	std::vector<char> buffer2(file_size);
+	input.read(buffer2.data(), file_size);
 
 	input.close();
+
+	brainfuck.loadInput(file_size, buffer2);
 
 	brainfuck.program();
 

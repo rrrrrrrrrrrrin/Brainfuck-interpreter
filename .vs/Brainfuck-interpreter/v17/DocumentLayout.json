@@ -3,12 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|solutionrelative:brainfuck.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\brainfuck.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|solutionrelative:brainfuck.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|solutionrelative:brainfuck.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -47,12 +50,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "vector",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "ViewState": "AgIAAH4HAAAAAAAAAAAUwIkHAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T22:45:52.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "brainfuck.hpp",
               "DocumentMoniker": "C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp",
               "RelativeDocumentMoniker": "brainfuck.hpp",
               "ToolTip": "C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp",
               "RelativeToolTip": "brainfuck.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-12T18:56:33.706Z",
               "EditorCaption": ""
@@ -65,22 +81,23 @@
               "RelativeDocumentMoniker": "brainfuck.cpp",
               "ToolTip": "C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\brainfuck.cpp",
               "RelativeToolTip": "brainfuck.cpp",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFQAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-12T18:56:24.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\0berd\\Desktop\\Brainfuck-interpreter\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-05T16:42:27.683Z"
+              "WhenOpened": "2025-11-05T16:42:27.683Z",
+              "EditorCaption": ""
             }
           ]
         }
