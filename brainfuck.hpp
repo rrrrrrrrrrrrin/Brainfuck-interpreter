@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <unordered_map>
+#include <stack>
 
 class Brainfuck
 {
@@ -14,7 +16,8 @@ private:
 	int byte = 0;
 	std::vector<char> input;
 
-	std::vector<std::pair<unsigned char, int>> brackets;
+	std::unordered_map<int, int> brackets_pos;  // to store jump positions for brackets
+	std::stack<int> brackets_stack;  // to close brackets
 	
 	bool error = false;
 

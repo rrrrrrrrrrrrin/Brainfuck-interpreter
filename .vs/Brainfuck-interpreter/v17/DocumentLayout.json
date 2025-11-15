@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|solutionrelative:brainfuck.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|solutionrelative:brainfuck.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{07AE7348-0D62-4D3F-A63A-D1021EED737D}|Brainfuck-interpreter.vcxproj|solutionrelative:brainfuck.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 218,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +38,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "brainfuck.hpp",
-              "DocumentMoniker": "C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp",
-              "RelativeDocumentMoniker": "brainfuck.hpp",
-              "ToolTip": "C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp",
-              "RelativeToolTip": "brainfuck.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-12T18:56:33.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "brainfuck.cpp",
               "DocumentMoniker": "C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\brainfuck.cpp",
               "RelativeDocumentMoniker": "brainfuck.cpp",
               "ToolTip": "C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\brainfuck.cpp",
               "RelativeToolTip": "brainfuck.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAA0wGUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-12T18:56:24.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA0wCQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-05T16:42:27.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "brainfuck.hpp",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp",
+              "RelativeDocumentMoniker": "brainfuck.hpp",
+              "ToolTip": "C:\\Users\\1\\Desktop\\Brainfuck-interpreter\\brainfuck.hpp",
+              "RelativeToolTip": "brainfuck.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-12T18:56:33.706Z",
               "EditorCaption": ""
             }
           ]
