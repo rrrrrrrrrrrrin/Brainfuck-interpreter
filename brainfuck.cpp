@@ -21,7 +21,7 @@ void Brainfuck::loadProgr(int file_size, std::vector<char> buffer)
 void Brainfuck::loadInput(int file_size, std::vector<char> buffer)
 {
 	for (int i = 0; i < file_size; i++) {
-		input[i] = buffer[i];
+		input.push_back(buffer[i]);
 	}
 }
 
@@ -53,7 +53,7 @@ void Brainfuck::program()
 			break;
 
 		case '.':
-			std::cout << memory[byte];
+			std::cout << memory[ptr];
 			break;
 
 		case ',':
@@ -105,7 +105,7 @@ void Brainfuck::program()
 			// Byte in the current memory cell is not 0
 			else if (symbol != 0)
 			{
-				// opcode_ptr is on '['
+				// opcode_ptr is on symbol '['
 				opcode_ptr = brackets.back().second;
 			}
 			else if (bracket == '[')
@@ -118,12 +118,17 @@ void Brainfuck::program()
 		}
 
 		default:
-			continue;
+			break;
 		}
 
-		if (ptr > sizeof(memory))
+		if (ptr >= sizeof(memory))
 		{
 			error = true;
+			break;
+		}
+
+		if (opcode_ptr == progr.size() - 1)
+		{
 			break;
 		}
 
